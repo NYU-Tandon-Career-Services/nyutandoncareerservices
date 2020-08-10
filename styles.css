@@ -49,17 +49,3 @@ h3{
 .foot{
 	background-image: linear-gradient(to right, #efb24d 0%, #f4bc8a 51%, #f29b83 100%);
 }*/
-
-.w3-hover:hover{
-	background-image: linear-gradient(to right, #efb24d 0%, #f4bc8a 51%, #f29b83 100%);
-}
-
-.cont{
-  display: inline-block;
-  width: 33.3%;
-  height: 100px;
-  padding: 30px;
-/*  border: 1px solid blue;*/    
-  background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
-}
-
