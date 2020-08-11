@@ -1,8 +1,8 @@
 :root {
-    --garuda-red: #ff595e;
+    --purple: #c29fc0;
     --nyu-purple: #57068c;
     --baby-blue: #d1edff;
-    --sky-blue: #a9d8fa;
+    --sky-blue: #95c0e0;
     --dark-blue: #87a9c5;
     --grey: #dfdfdf;
     --grey-1: #f2f5f5;
@@ -413,7 +413,7 @@ footer a:hover {
     color: var(--text-secondary);
     padding-top: 120px;
     padding-bottom: 120px;
-    background-color: var(--garuda-red);
+    background-color: var(--purple);
 }
 
 .section-track h1 {
