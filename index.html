@@ -1,128 +1,653 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title> Home | NYU Tandon Career Fair </title>
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!--  <style type="text/css">
-    html { background-image: linear-gradient(90deg, #91a4b8,#c59cbe); }
-  </style> -->
-</head>
-<body>
+<html lang="en">
+    <head>
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-card w3-white">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover">Home</a>
-    <a href="students.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover">Students</a>
-    <a href="employers.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover">Employers</a>
-    <a href="schedule.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover">Schedule</a>    
-    </div>
-<!--     <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a> -->
-  </div>
-</div>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta
+            name="description"
+            content="Website for the NYU Tandon Career Services bi-annual career fairs." />
+        <meta
+            property="og:title"
+            content="NYU Tandon Career Services | Fair" />
+        <meta
+            property="og:description"
+            content="Website for the NYU Tandon Career Services bi-annual career fairs.." />
+        <!-- Bootstrap CSS -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+            crossorigin="anonymous" />
+        <link rel="stylesheet" href="styles.css" />
 
-<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-top w3-white" style="margin-top:46px">
-    <a href="students.html" class="w3-bar-item w3-button w3-padding-large w3-white w3-hover" onclick="myFunction()">Students</a>
-    <a href="employers.html" class="w3-bar-item w3-button w3-padding-large w3-white w3-hover" onclick="myFunction()">Employers</a>
-    <a href="schedule.html" class="w3-bar-item w3-button w3-padding-large w3-white w3-hover" onclick="myFunction()">Schedule</a>
-</div>
+        <script
+            src="https://kit.fontawesome.com/b2247133c9.js"
+            crossorigin="anonymous"></script>
 
-<!-- Page content -->
-<div class="w3-content" style="max-width:2000px;">
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/flickity@2.2.1/dist/flickity.min.css"/>
 
-  <!-- Main Section -->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:900px">
-    <h4>NYU Tandon Office of Career Services</h4>
-    <h1>CAREER FAIR</h1>
-    <p id="update"><marquee>IMPORTANT UPDATE: ALL FALL CAREER EVENTS WILL BE VIRTUAL. Our career fairs and other recruiting activities will take place virtually, regardless of NYU’s other decisions about campus for the fall.</marquee></p>
-    <p>
-      We are committed to providing opportunities for students and employers to connect, and <b>attending a career fair remains the top way to create these connections</b>. Our virtual event technology includes <b>customized options for video conversations and group discussions</b>.<br><br>B
-      Our targeted and industry-specific events continue to offer a great way to build your talent pipeline and recruit <b>Undergraduate and Master's students</b> and alumni for a diverse range of job and internship roles. Whether your organization is new to our career fairs, or is a returning participant,<b> we welcome you and look forward to connecting you with NYU talent</b>. <br>
-      <br><br>
-      Learn more about our 2020-2021 Fall and Spring career fairs by clicking below. <br><br>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@300;400;700&display=swap"
+            rel="stylesheet" />
 
-      I am a
-    </p>
-    <button class="button btn"> Student </button>
-    <button class="button btn"> Employer </button>
+        <title>NYU Tandon Career Services | Fair</title>
 
-  <!-- Companies -->
-  <div id="comp">
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      <h3 class="w3-wide w3-center">Participating Companies</h3>
-      <p>INFORMATION COMING SOON</p>
-    </div>
-  </div>
+    </head>
 
-  <!-- FAQ -->
-  <div id="faq">
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      <h3 class="w3-wide w3-center">Frequently Asked Questions</h3>
-      <p>INFORMATION COMING SOON</p>
+    <body>
 
-    </div>
-  </div>  
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand d-none d-md-block" href="#"
+                ><img
+                    style="height: 45px;"
+                    src="./img/logo.png"
+                    alt="Garuda Hacks Logo"
+            /></a>
 
-  <!-- The Contact Section -->
-<!--   <div class="w3-container w3-content w3-padding-64" id="spring" style="max-width:800px" id="contact">
-    <h2 class="w3-wide w3-center">CONTACT</h2>
-    <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-col m6 w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
-        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
-      </div>
-      <div class="w3-col m6">
-        <form action="/action_page.php" target="_blank">
-          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mr-5">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#activity">Activity</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#track">Track</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">FAQ</a>
+                    </li>
+
+                </ul>
             </div>
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+        </nav>
+
+        <section class="section-hero" id="home">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h5>
+                            NYU Tandon Office of Career Services
+                        </h5>
+                        <h1>
+                            Career Fair
+                        </h1>
+                        <p>
+                            <marquee><strong>
+                                IMPORTANT UPDATE: ALL FALL CAREER EVENTS WILL BE VIRTUAL. 
+                                Our career fairs and other recruiting activities will take place virtually, regardless of NYU’s other decisions about campus for the fall.
+                            </strong></marquee>
+                            We are committed to providing opportunities for students 
+                            and employers to connect, and <strong>attending a career fair 
+                            remains the top way to create these connections</strong>. 
+
+                            Our virtual event technology includes <strong>customized 
+                            options for video conversations and group discussions</strong>.
+                            
+                            <br><br>
+
+                            Our targeted and industry-specific events continue to 
+                            offer a great way to build your talent pipeline and recruit 
+                            <strong>Undergraduate and Master's students</strong> and alumni for a 
+                            diverse range of job and internship roles. 
+                            Whether your organization is new to our career fairs, 
+                            or is a returning participant,<strong> we welcome you and look 
+                            forward to connecting you with NYU talent</strong>. 
+
+                            <br><br>
+
+                            Learn more about our 2020-2021 Fall and Spring career fairs by clicking below.
+
+                        </p>
+                        
+                        <div class="col-auto">
+                            <a class="btn btn-register" href="./register">
+                                I AM A STUDENT
+                            </a>
+                        </div>
+                        <div class="col-auto">
+                            <a class="btn btn-register" href="https://slack.garudahacks.com">
+                                I AM AN EMPLOYER
+                            </a>
+                        </div>                        
+                    </div>
+                </div>
             </div>
-          </div>
-          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
-        </form>
-      </div>
-    </div>
-  </div> -->
-  
-<!-- End Page Content -->
-</div>
+        </section>
 
-<!-- Image of location/map -->
-<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+        <section class="section-sponsor">
+            <div class="container">
+                <p class="text-center sponsor-text">
+                    Participating Employers
+                </p>
+            </div>
+            <div class="main-carousel">
+                <div class="carousel-cell">
+                    <img
+                        src="./img/sponsor/ovo.png"
+                        class="mx-auto sponsor-img"
+                        alt="OVO Logo"
+                    />
+                </div>
+                <div class="carousel-cell">
+                    <img
+                        src="./img/sponsor/wahyoo.png"
+                        class="mx-auto sponsor-img"
+                        alt="Wahyoo Logo"
+                    />
+                </div>
+                <div class="carousel-cell">
+                    <img
+                        src="./img/sponsor/intudo.png"
+                        class="mx-auto sponsor-img"
+                        alt="Intudo Logo"
+                    />
+                </div>
+                <div class="carousel-cell">
+                    <img
+                        src="./img/sponsor/bubble.png"
+                        class="mx-auto sponsor-img"
+                        alt="Bubble Logo"
+                    />
+                </div>
+                <div class="carousel-cell">
+                    <img
+                        src="./img/sponsor/dana.png"
+                        class="mx-auto sponsor-img"
+                        alt="Dana Logo"
+                    />
+                </div>
+                <div class="carousel-cell">
+                    <img
+                        src="./img/sponsor/cotter.png"
+                        class="mx-auto sponsor-img"
+                        alt="Cotter Logo"
+                    />
+                </div>
+                <div class="carousel-cell">
+                    <img
+                        src="./img/sponsor/balsamiq.png"
+                        class="mx-auto sponsor-img"
+                        alt="Balsamiq Logo"
+                    />
+                </div>
+                <div class="carousel-cell">
+                    <img
+                        src="./img/sponsor/linode.png"
+                        class="mx-auto sponsor-img"
+                        alt="Linode Logo"
+                    />
+                </div>
+            </div>
+        </section>
 
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-xlarge foot">
-    <p class="w3-medium"><b>FIND US ON SOCIAL MEDIA</b></p>
-    <a href="https://www.instagram.com/nyutandoncareerservices" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a> &nbsp;
-    <a href="https://www.linkedin.com/company/nyu-tandon-office-of-career-services/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-    <p class="w3-medium">💻 with 💜 by the NYU Tandon Office of Career Services Team <!-- <a href="http://www.mataharikinanti.com" target="_blank">Ari</a> --></p>
-</footer>
+        <section class="section-what" id="activity">
+            <div class="container">
+                <h1 class="mb-5 text-center text-md-left">
+                    Daily Schedule
+                </h1>
+                <iframe
+                    class="airtable-embed"
+                    src="https://airtable.com/embed/shryFDF9ezF6YjWss?backgroundColor=pink"
+                    frameborder="0"
+                    onmousewheel=""
+                    width="100%"
+                    height="533"
+                    style="background: transparent; border: 1px solid #ccc;"
+                ></iframe>
+            </div>
+        </section>
 
-<script>
+        <section class="section-track" id="track">
+            <div class="container">
+                <h1 class="text-center">
+                    How to Prepare for the Career Fair?
+                </h1>
+                <p class="mx-auto text-center subtitle">
+                    Subtitle here
+                </p>
+                <div class="row items-container">
+                    <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+                        <div class="item">
+                            <div class="item-header"></div>
+                            <div class="item-body">
+                                <p class="item-title">Before</p>
+                                <p class="item-desc">
+                                    Content
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+                        <div class="item">
+                            <div class="item-header"></div>
+                            <div class="item-body">
+                                <p class="item-title">During</p>
+                                <p class="item-desc">
+                                    Content
+                                </p>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+                        <div class="item">
+                            <div class="item-header"></div>
+                            <div class="item-body">
+                                <p class="item-title">After</p>
+                                <p class="item-desc">
+                                    Content
+                                </p>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
+        <section class="section-faq" id="faq">
+            <div class="container">
+                <h1 class="text-center">
+                    Frequently Asked Questions
+                </h1>
+                <p class="mx-auto text-center subtitle">
+                    Subtitle here
+                </p>
 
-</script>
+                <div class="accordion" id="accordionFAQ">
+                    <div class="row magic-container">
+                        <div class="col-12 col-lg-6">
+                            <div class="card">
+                                <div
+                                    class="card-header collapsed"
+                                    id="headingOne"
+                                    data-toggle="collapse"
+                                    data-target="#collapseOne"
+                                    aria-expanded="true"
+                                    aria-controls="collapseOne"
+                                >
+                                    <div class="row">
+                                        <div class="col">
+                                            <p>
+                                                What is the Employer Expo?
+                                            </p>
+                                        </div>
+                                        <div class="col-auto mr-auto">
+                                            <i class="fas fa-chevron-up"></i>
+                                        </div>
+                                    </div>
+                                </div>
 
-</body>
+                                <div
+                                    id="collapseOne"
+                                    class="collapse"
+                                    aria-labelledby="headingOne"
+                                    data-parent="#accordionFAQ"
+                                >
+                                    <div class="card-body">
+                                        This is an opportunity for our employer partners to host a one-hour info session for NYU Tandon  students to learn about the company, available roles and ideal candidate profiles (internship/or jobs). 
+                                        <ul>
+                                            <li>
+                                                We will coordinate logistics with you once you’ve signed up 
+                                            </li>
+                                            <li>
+                                               It is not mandatory to host an info session but we highly encourage it so your target audience will have a better understanding of your company and desired profiles 
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div
+                                    class="card-header collapsed"
+                                    id="headingTwo"
+                                    data-toggle="collapse"
+                                    data-target="#collapseTwo"
+                                    aria-expanded="true"
+                                    aria-controls="collapseTwo"
+                                >
+                                    <div class="row">
+                                        <div class="col">
+                                            <p>
+                                                How does the Virtual Career Fair Work? 
+                                            </p>
+                                        </div>
+                                        <div class="col-auto mr-auto">
+                                            <i class="fas fa-chevron-up"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div
+                                    id="collapseTwo"
+                                    class="collapse"
+                                    aria-labelledby="headingTwo"
+                                    data-parent="#accordionFAQ"
+                                >
+                                    <div class="card-body">
+                                        From Sept 14-18, we will host a Diversity Session at the beginning of each Career Fair (9-10 AM) followed by a General Session open to your target Tandon audience (10AM-1PM).
+                                        <ul>
+                                            <li>
+                                                <strong>What platform will this be on?</strong><br>
+                                                We use a platform called Brazen for the Career Fair.
+                                            </li>
+                                            <li>
+                                                <strong>What do I need to do?</strong><br>
+                                                Select which career fair(s) suits your talent needs best. If you are looking to hire, we will create a virtual booth (which will include your logo, company information, website, open roles). You will receive a link to access your booth prior to the event. On the day of the event, students virtually line up to chat on a first-come, first-serve basis, much like a regular career fair. Employers are encouraged to bring multiple reps, so you may want to ensure that you have appropriate staffing for the day of the event
+                                            </li>
+                                            <li>
+                                                <strong>How many reps can we have?</strong><br>
+                                                You can have up to 5 reps
+                                            </li>
+                                            <li>
+                                                <strong>Chat Duration:</strong><br>
+                                                Each chat with a student last 10 minutes and may be text or video based
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div
+                                    class="card-header collapsed"
+                                    id="headingThree"
+                                    data-toggle="collapse"
+                                    data-target="#collapseThree"
+                                    aria-expanded="true"
+                                    aria-controls="collapseThree"
+                                >
+                                    <div class="row">
+                                        <div class="col">
+                                            <p>
+                                                What is the cost?
+                                            </p>
+                                        </div>
+                                        <div class="col-auto mr-auto">
+                                            <i class="fas fa-chevron-up"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div
+                                    id="collapseThree"
+                                    class="collapse"
+                                    aria-labelledby="headingThree"
+                                    data-parent="#accordionFAQ"
+                                >
+                                    <div class="card-body">
+                                        There is no cost to participate in these events.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div
+                                    class="card-header collapsed"
+                                    id="headingSeven"
+                                    data-toggle="collapse"
+                                    data-target="#collapseSeven"
+                                    aria-expanded="true"
+                                    aria-controls="collapseSeven"
+                                >
+                                    <div class="row">
+                                        <div class="col">
+                                            <p>
+                                                What about diversity sessions? 
+                                            </p>
+                                        </div>
+                                        <div class="col-auto mr-auto">
+                                            <i class="fas fa-chevron-up"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div
+                                    id="collapseSeven"
+                                    class="collapse"
+                                    aria-labelledby="headingSeven"
+                                    data-parent="#accordionFAQ"
+                                >
+                                    <div class="card-body">
+                                        The first hour of every day will be dedicated to minority/underrepresented students.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div
+                                    class="card-header collapsed"
+                                    id="headingEight"
+                                    data-toggle="collapse"
+                                    data-target="#collapseEight"
+                                    aria-expanded="true"
+                                    aria-controls="collapseEight"
+                                >
+                                    <div class="row">
+                                        <div class="col">
+                                            <p>
+                                                Can I sign up for more than one fair?
+                                            </p>
+                                        </div>
+                                        <div class="col-auto mr-auto">
+                                            <i class="fas fa-chevron-up"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div
+                                    id="collapseEight"
+                                    class="collapse"
+                                    aria-labelledby="headingEight"
+                                    data-parent="#accordionFAQ"
+                                >
+                                    <div class="card-body">
+                                        Yes. <br>
+                                        <strong>Looking to recruit students from specific majors?</strong><br>
+                                        Sign up for the corresponding fairs
+                                        <strong>Looking to hire across all NYU Tandon majors?</strong><br> 
+                                        Sign up for the September 18th fair (open to all majors)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="card">
+                                <div
+                                    class="card-header collapsed"
+                                    id="headingOne"
+                                    data-toggle="collapse"
+                                    data-target="#collapseFour"
+                                    aria-expanded="true"
+                                    aria-controls="collapseFour"
+                                >
+                                    <div class="row">
+                                        <div class="col">
+                                            <p>
+                                                What if these dates don’t work for us?
+                                            </p>
+                                        </div>
+                                        <div class="col-auto mr-auto">
+                                            <i class="fas fa-chevron-up"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div
+                                    id="collapseFour"
+                                    class="collapse"
+                                    aria-labelledby="headingFour"
+                                    data-parent="#accordionFAQ"
+                                >
+                                    <div class="card-body">
+                                        You can contact 
+                                        <a href="mailto:tandoncareers@nyu.edu">tandoncareers@nyu.edu</a>
+                                        so we can coordinate with you to find a date that works
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div
+                                    class="card-header collapsed"
+                                    id="headingFive"
+                                    data-toggle="collapse"
+                                    data-target="#collapseFive"
+                                    aria-expanded="true"
+                                    aria-controls="collapseFive"
+                                >
+                                    <div class="row">
+                                        <div class="col">
+                                            <p>
+                                                Can we engage with Tandon students in additional ways? 
+                                            </p>
+                                        </div>
+                                        <div class="col-auto mr-auto">
+                                            <i class="fas fa-chevron-up"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div
+                                    id="collapseFive"
+                                    class="collapse"
+                                    aria-labelledby="headingFive"
+                                    data-parent="#accordionFAQ"
+                                >
+                                    <div class="card-body">
+                                        Click 
+                                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSerTb8Ny53Qq0jRtruxoVL4S_SvRDp1WzXE4EPJBZ-gtVv5Sg/viewform?usp=sf_link" target="_blank">here</a> 
+                                        to request a virtual coffee chat, tech talks, career panels or other stand alone recruitment events. 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div
+                                    class="card-header collapsed"
+                                    id="headingSix"
+                                    data-toggle="collapse"
+                                    data-target="#collapseSix"
+                                    aria-expanded="true"
+                                    aria-controls="collapseSix"
+                                >
+                                    <div class="row">
+                                        <div class="col">
+                                            <p>
+                                                Question
+                                            </p>
+                                        </div>
+                                        <div class="col-auto mr-auto">
+                                            <i class="fas fa-chevron-up"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div
+                                    id="collapseSix"
+                                    class="collapse"
+                                    aria-labelledby="headingSix"
+                                    data-parent="#accordionFAQ"
+                                >
+                                    <div class="card-body">
+                                        Answer
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div
+                                    class="card-header collapsed"
+                                    id="headingNine"
+                                    data-toggle="collapse"
+                                    data-target="#collapseNine"
+                                    aria-expanded="true"
+                                    aria-controls="collapseNine"
+                                >
+                                    <div class="row">
+                                        <div class="col">
+                                            <p>
+                                                Question
+                                            </p>
+                                        </div>
+                                        <div class="col-auto mr-auto">
+                                            <i class="fas fa-chevron-up"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div
+                                    id="collapseNine"
+                                    class="collapse"
+                                    aria-labelledby="headingNine"
+                                    data-parent="#accordionFAQ"
+                                >
+                                    <div class="card-body">
+                                        Answer
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center footer-text">
+                        <div>
+                            <h1>NYU Tandon Office of Career Services</h1>
+                            <p class="bold">
+                                FIND US ON SOCIAL MEDIA
+                            </p>
+                            <p>
+                                <a href="https://www.instagram.com/nyutandoncareerservices/" target="_blank">
+                                    <i class="fab fa-instagram-square"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/company/nyu-tandon-office-of-career-services/" target="_blank">
+                                   <i class="fab fa-linkedin"></i> 
+                                </a>
+                            </p>
+                            <p>
+                                💻 with 💜 by the NYU Tandon Office of Career Services Team
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://unpkg.com/flickity@2.2.1/dist/flickity.pkgd.min.js"></script>
+        <script src="index.js"></script>
+    </body>
 </html>
+
